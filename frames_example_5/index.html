@@ -89,10 +89,6 @@
 
 	</head>
 	
-	<frameset rows ="150,150,*">
-		<frame src="ask.html" name="askframe">
-	</frameset>
-
 	<body>
 
 		<header id="header">
@@ -106,8 +102,10 @@
 
 			<div class="innertube">
 
-				<h1><a href="ask.html" target="askframe">ASK</a> | QUIZ | CHAT | NOTES</h1>
-
+				<h1><button><a href="ask.html" target="askframe">ASK</a></button> | <button><a href="quiz.html" target="quizframe">QUIZ</a></button> | <button><a href="chat.html" target="chatframe">CHAT</a></button> | <button><a href="note.html" target="askframe">NOTES</a></button></h1>
+				<iframe src ="ask.html" name="askframe">
+		<p>your browser does not support iframes</p>
+	</iframe>
 				<p><script>generateText(300)</script></p>
 
 					</div>
