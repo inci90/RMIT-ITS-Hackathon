@@ -2,7 +2,6 @@
 	width: 100%;
 	height: 50px;
 	/* Disables scrollbars on the header frame. To enable scrollbars, change "hidden" to "scroll" */
-	background: #fff1f1;
 }
 
 #wrapper {
@@ -34,12 +33,6 @@
 
 }
 
-#footer {
-	width: 100%;
-	height: 20px;
-	background: #f1f1f1;
-}
-
 .intrinsic-container {
   position: relative;
   height: 0;
@@ -67,6 +60,41 @@
 .innertube {
 	margin: 15px;
 	/* Provides padding for the content */
+}
+
+.logo-size {
+	width:64px;
+	height:64px;
+	margin-top:-10px;
+}
+
+.logo-move-corner{
+	float:left;
+	position:absolute;
+}
+
+.move-title-up {
+	margin-top:-10px;	
+}
+
+.title-move-right {
+	margin-left:70px;
+}
+.image-properties {
+	width:64px;
+	height:64px;
+	position:fixed;
+	top:0;
+	left:0;
+}
+
+.title-move {
+	margin-left:70px;	
+}
+
+.video-center {
+	margin-left:10%;
+	
 }
 
 .button {
@@ -103,7 +131,6 @@ html, body {
 	margin: 0;
 	width: 100%;
 	min-height: 100%;
-	background: purple;
 }
 
 a {
