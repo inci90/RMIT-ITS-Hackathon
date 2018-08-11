@@ -49,6 +49,26 @@
 		.innertube {
 			margin: 15px; /* Provides padding for the content */
 		}
+
+		.button {
+			background-color: #E4E4E4;
+			/* Green */
+			border: none;
+			color: #646464;
+			padding: 15px 32px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			margin: 4px 2px;
+			cursor: pointer;
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+
 		p {
 			color: #555;
 		}
