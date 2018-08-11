@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- Template by quackit.com -->
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -24,7 +23,7 @@
 				<button class="button"><a href="chat.html" target="chatframe">CHAT</a></button>
 				<button class="button"><a href="quiz.html" target="quizframe">QUIZ</a></button>
 				<button class="button"><a href="poll.html" target="quizframe">POLL</a></button>
-				<button class="button"><a href="note.html" target="askframe">NOTES</a></button>
+				<button class="button"><a href="notes.html" target="askframe">NOTES</a></button>
 			<iframe src ="ask.html" width="100%" height="400px" name="askframe">
 				<p>your browser does not support iframes</p>
 			</iframe>
@@ -32,18 +31,29 @@
 		</main>
 	</body>
 
-		<nav id="nav">
-			<div class="innertube">
-				<h1>LEC-LIVE STREAM</h1>
-				<ul>
-					<li>
-						<video width="500" height="500" controls><source src="https://www.youtube.com/watch?v=PUPDGbnpSjw"><a href="#">VIDEO</a></video>
-					</li>
+		<div id="left-panel">
+			<!-- Template by quackit.com
+			this is the div container for the whole left side: video, bookmark/hand up buttons and lecture-notes
+			-->
+			<div class="video">
 
-				</ul>
+						<video width="500" height="500" controls><source src="https://www.youtube.com/watch?v=PUPDGbnpSjw"></video>
 
 			</div>
-		</nav>
+
+			<div id="bookmark-handup">
+				<button class="button button2"><a href="test.html" target="askframe">BOOKMARK</a></button>
+				<button class="button button3"><a href="test.html" target="askframe">HANDS UP</a></button>
+			</div>
+
+			<div id="lecture-note">
+				<iframe src="https://research.google.com/pubs/archive/44678.pdf"
+				   width="500px" height="300px" >
+				   <p>your browser does not support iframes</p>
+				</iframe>
+
+			</div>
+		</div>
 
 		<footer id="footer">
 			<div class="innertube">
