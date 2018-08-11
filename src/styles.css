@@ -8,7 +8,7 @@ body {
 	width: 100%;
 	height: 100px;
 	/* Disables scrollbars on the header frame. To enable scrollbars, change "hidden" to "scroll" */
-	background: white;
+	background: #fff1f1;
 }
 
 #wrapper {
@@ -16,8 +16,7 @@ body {
 }
 
 #left-panel {
-	width: 70%;
-	height: auto;
+	width: 60%;
 	/* Scrollbars will appear on this frame only when there's enough content to require scrolling. To disable scrollbars, change to "hidden", or use "scroll" to enable permanent scrollbars*/
 	background: black;
 	overflow: scroll;
@@ -53,19 +52,6 @@ body {
 	/* Provides padding for the content */
 }
 
-.logo {
-	float: left;
-}
-
-.video {
-	float: center;
-}
-
-.header-text {
-	padding: 2px 5px;
-	text-align: left;
-}
-
 .button {
 	background-color: #E4E4E4;
 	/* Green */
@@ -78,6 +64,8 @@ body {
 	font-size: 16px;
 	margin: 4px 2px;
 	cursor: pointer;
+	border-radius: 4px;
+
 }
 
 .button2 {
@@ -95,18 +83,6 @@ body {
 
 /* Red */
 
-.button4 {
-	background-color: #e7e7e7;
-	color: black;
-}
-
-/* Gray */
-
-.button5 {
-	background-color: #555555;
-}
-
-/* Black */
 
 a {
 	text-decoration: none;
