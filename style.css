@@ -1,3 +1,17 @@
+html {
+	background-color:#white;
+}
+
+.navigation {
+	text-align:center;
+	border-color: #800000;
+	border-style: solid;
+	background-color: #800000;
+}
+
+.tab-navigation {
+	margin-left:70%;
+}
 <!DOCTYPE html>
 <html>
 
@@ -16,9 +30,6 @@ function handUp() {
 function bookmark() {
     alert("Bookmark placed at 12ms33s!");
 }
-function resizeIframe(obj) {
-    obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
-  }
 </script>
 
 
@@ -34,7 +45,7 @@ function resizeIframe(obj) {
 				this is the div container for the whole left side: video, bookmark/hand up buttons and lecture-notes
 				-->
 			<div class="video">
-				<video width="80%" height="80%" controls><source src="https://www.youtube.com/watch?v=z-OxzIC6pic" type="video/mp4"></video>
+				<video width="80%" height="80%" controls><source src="https://www.youtube.com/watch?v=PUPDGbnpSjw"></video>
 			</div>
 
 			<div id="bookmark-handup">
@@ -43,35 +54,37 @@ function resizeIframe(obj) {
 			</div>
 
 			<div id="lecture-note">
-				<iframe src="https://research.google.com/pubs/archive/44678.pdf" width="100%" height="300px">
+				<iframe src="https://research.google.com/pubs/archive/44678.pdf" width="100%" height="auto">
 					   <p>your browser does not support iframes</p>
 					</iframe>
 			</div>
 		</div>
 
-<script>
+
+			
+			<script>
 			function NavigationBar(type){
 				var x = document.getElementById("iframe");
 				if (x.src !== "ask.html" && type === "ask.html" ) {
-					x.src = type;
+					x.src = "ask.html";
 				} else if (x.src !== "chat.html" && type === "../src/ws-chat-client/chat_client.html") {
 					x.src = type;
 				} else if (x.src !== "quiz.html" && type === "quiz.html") {
-					x.src = type;
-				} else if (x.src !== "poll.html" && type === "https://goo.gl/forms/cyCepN7lD6sktq4q2") {
-					x.src = type;
+					x.src = "quiz.html";
+				} else if (x.src !== "poll.html" && type === "poll.html") {
+					x.src = "poll.html";
 				} else if (x !== "note.html" && type === "note.html") {
-					x.src = type;
+					x.src = "note.html";
 				}
 			}
 			</script>
 			
 		<div id="right-panel">
-			<button class="button"><a onclick="NavigationBar('ask.html')">ASK</a></button>
-			<button class="button"><a onclick="NavigationBar('../src/ws-chat-client/chat_client.html')">CHAT</a></button>
-			<button class="button"><a onclick="NavigationBar('quiz.html')">QUIZ</a></button>
-			<button class="button"><a onclick="NavigationBar('https://goo.gl/forms/cyCepN7lD6sktq4q2')">POLL</a></button>
-			<button class="button"><a onclick="NavigationBar('notes.html')">NOTES</a></button>
+			<button class="button"><a onclick="NavigationBar('ask.html')" target="askframe">ASK</a></button>
+			<button class="button"><a onclick="NavigationBar('../src/ws-chat-client/chat_client.html')" target="chatframe">CHAT</a></button>
+			<button class="button"><a onclick="NavigationBar('quiz.html')" target="askframe">QUIZ</a></button>
+			<button class="button"><a onclick="NavigationBar('poll.html')" target="askframe">POLL</a></button>
+			<button class="button"><a onclick="NavigationBar('notes.html')"target="askframe">NOTES</a></button>
 			<iframe id="iframe" src="ask.html" width="100%" height="400px" name="askframe">
 				<p>your browser does not support iframes</p>
 		</iframe>
@@ -80,5 +93,5 @@ function resizeIframe(obj) {
 </body>
 
 
-
 </html>
+
