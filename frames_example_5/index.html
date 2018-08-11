@@ -32,15 +32,17 @@
 
 		<main>
 
+			
 			<div class="innertube">
-
-				<h1><button><a href="ask.html" target="askframe">ASK</a></button> | <button><a href="quiz.html" target="quizframe">QUIZ</a></button> | <button><a href="chat.html" target="chatframe">CHAT</a></button> | <button><a href="note.html" target="askframe">NOTES</a></button></h1>
-				<iframe src ="ask.html" name="askframe">
-		<p>your browser does not support iframes</p>
-	</iframe>
-				
-
-					</div>
+			<h1><button><a href="ask.html" onload ="resizeIframe(this)"id="askframe" target="askframe">ASK</a></button>
+				| <button><a href="quiz.html" id="quizframe" target="quizframe">QUIZ</a></button>
+				| <button><a href="chat.html" id="chatframe" target="chatframe">CHAT</a></button>
+				| <button><a href="note.html" id="noteframe" target="noteframe">NOTES</a></button>
+			</h1>
+			<iframe src ="ask.html" width="50%" height="40%" name="askframe">
+				<p>your browser does not support iframes</p>
+			</iframe>
+			</div>
 		</main>
 	</body>
 
