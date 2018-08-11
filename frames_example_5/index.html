@@ -5,20 +5,6 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<title>3 Rows, 2 Columns A</title>
 		<link rel="stylesheet" href="styles.css">
-
-
-		<script type="text/javascript">
-			/* =============================
-			This script generates sample text for the body content.
-			You can remove this script and any reference to it.
-			 ============================= */
-			var bodyText=["Welcome to Lec-Live.", "new features coming every day.", "I've never had so much interactivity with a lecture, I love being able to do quizzes remotely.", "I intend to live forever. So far, so good.", "</p><p>A clear conscience is usually a sign of a bad memory.", "What's another word for Thesaurus?", "<h3>Heading</h3><p>Experience is something you don't get until just after you need it."]
-			function generateText(sentenceCount){
-				for (var i=0; i<sentenceCount; i++)
-				document.write(bodyText[Math.floor(Math.random()*7)]+" ")
-			}
-		</script>
-
 	</head>
 
 	<body>
@@ -32,14 +18,14 @@
 
 		<main>
 
-			
+
 			<div class="innertube">
-			<h1><button><a href="ask.html" onload ="resizeIframe(this)"id="askframe" target="askframe">ASK</a></button>
-				| <button><a href="quiz.html" id="quizframe" target="quizframe">QUIZ</a></button>
-				| <button><a href="chat.html" id="chatframe" target="chatframe">CHAT</a></button>
-				| <button><a href="note.html" id="noteframe" target="noteframe">NOTES</a></button>
-			</h1>
-			<iframe src ="ask.html" width="100%" height="420px" name="askframe">
+				<button class="button"><a href="ask.html" target="askframe">ASK</a></button>
+				<button class="button"><a href="chat.html" target="chatframe">CHAT</a></button>
+				<button class="button"><a href="quiz.html" target="quizframe">QUIZ</a></button>
+				<button class="button"><a href="poll.html" target="quizframe">POLL</a></button>
+				<button class="button"><a href="note.html" target="askframe">NOTES</a></button>
+			<iframe src ="ask.html" width="100%" height="400px" name="askframe">
 				<p>your browser does not support iframes</p>
 			</iframe>
 			</div>
