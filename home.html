@@ -1,27 +1,142 @@
 <!DOCTYPE html>
+<!-- Template by quackit.com -->
 <html>
 	<head>
-		<link href="./style.css" rel="stylesheet" type="text/css">
-		<header>
-			<title>
-				<h1>Title</h1>
-			</title>
-		</header>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>3 Rows, 2 Columns A</title>
+		<style type="text/css">
+		body {
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			height: 100%;
+			max-height: 100%;
+			font-family:Sans-serif;
+			line-height: 1.5em;
+		}
+		main {
+			position: fixed;
+			top: 100px; /* Set this to the height of the header */
+			bottom: 50px; /* Set this to the height of the footer */
+			left: 530px;
+			right: 0;
+			overflow: auto;
+			background: #fff;
+		}
+		#header {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100px;
+			overflow: hidden; /* Disables scrollbars on the header frame. To enable scrollbars, change "hidden" to "scroll" */
+			background: #BCCE98;
+		}
+		#footer {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			height: 50px;
+			overflow: hidden; /* Disables scrollbars on the footer frame. To enable scrollbars, change "hidden" to "scroll" */
+			background: #BCCE98;
+		}
+		#nav {
+			position: absolute;
+			top: 100px; /* Set this to the height of the header */
+			bottom: 50px; /* Set this to the height of the footer */
+			left: 0;
+			width: 520px;
+			/*overflow: auto;*/ /* Scrollbars will appear on this frame only when there's enough content to require scrolling. To disable scrollbars, change to "hidden", or use "scroll" to enable permanent scrollbars */
+			background: #DAE9BC;
+		}
+		.innertube {
+			margin: 15px; /* Provides padding for the content */
+		}
+		p {
+			color: #555;
+		}
+		nav ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+		nav ul a {
+			color: darkgreen;
+			text-decoration: none;
+		}
+		/*IE6 fix*/
+		* html body{
+			padding: 50px 0 50px 230px; /* Set the first value to the height of the header, the third value to the height of the footer, and last value to the width of the nav */
+		}
+		* html main{
+			height: 100%;
+			width: 100%;
+		}
+		</style>
+
+		<script type="text/javascript">
+			/* =============================
+			This script generates sample text for the body content.
+			You can remove this script and any reference to it.
+			 ============================= */
+			var bodyText=["Remember, you are unique, just like everybody else.", "Too much agreement kills a good chat.", "Get your facts first, then you can distort them as you please.", "I intend to live forever. So far, so good.", "</p><p>A clear conscience is usually a sign of a bad memory.", "What's another word for Thesaurus?", "<h3>Heading</h3><p>Experience is something you don't get until just after you need it."]
+			function generateText(sentenceCount){
+				for (var i=0; i<sentenceCount; i++)
+				document.write(bodyText[Math.floor(Math.random()*7)]+" ")
+			}
+		</script>
+
 	</head>
 	
-	<nav>
-		
-	</nav>
-	
 	<body>
-		<video width = "480" height="360" controls>
-			<source src = "hd1.mp4" type = "video/mp4">
-		</video>
-		<main>
-		</,main>
-	</body>
+
+		<header id="header">
+			<div class="innertube">
+				<h3>COSC2299/2428<br>
+				Software Engineering: Process and Tools - Week 4 (11/08/2018)</h3>
+			</div>
+		</header>
 	
-	<footer>
-	</footer>
+		<main>
+
+			<div class="innertube">
+
+				<h1><button><a href="ask.html" onload ="resizeIframe(this)"id="askframe" target="askframe">ASK</a></button> | <button><a href="quiz.html" id="quizframe" target="quizframe">QUIZ</a></button> | <button><a href="chat.html" id="chatframe" target="chatframe">CHAT</a></button> | <button><a href="note.html" id="noteframe" target="noteframe">NOTES</a></button></h1>
+				<iframe src ="ask.html" name="askframe">
+		<p>your browser does not support iframes</p>
+	</iframe>
+		
+	<script>
+		function resizeIframe(obj){
+			obj.style.heiht = obj.contentWindow.document.body.scrollHeight+'px;'
+		}
+	</script>
+				
+				
+	<p><script>generateText(300)</script></p>
+		</div>
+		</main>
+	</body>
+
+		<nav id="nav">
+			<div class="innertube">
+				<h1>LEC-LIVE STREAM</h1>
+				<ul>
+					<li>
+						<video width="500" height="500" controls><source src="https://www.youtube.com/watch?v=PUPDGbnpSjw"><a href="#">VIDEO</a></video>
+					</li>
+
+				</ul>
+
+			</div>
+		</nav>
+
+		<footer id="footer">
+			<div class="innertube">
+				<p>Lec-Live echo replacement proudly created by Ctrl-Alt-Elite @ RMIT ITS Hackathon 2018 :)</p>
+			</div>
+		</footer>
+
 
 </html>
