@@ -31,20 +31,36 @@
 			<div id="lecture-note">
 				<iframe src="https://research.google.com/pubs/archive/44678.pdf" width="100%" height="auto">
 					   <p>your browser does not support iframes</p>
-					</iframe>
+				</iframe>
 			</div>
 		</div>
 
-
-		<div id="right-panel">
-			<button class="button"><a href="ask.html" target="askframe">ASK</a></button>
-			<button class="button"><a href="../src/ws-chat-client/chat_client.html" target="chatframe">CHAT</a></button>
-			<button class="button"><a href="quiz.html" target="quizframe">QUIZ</a></button>
-			<button class="button"><a href="poll.html" target="quizframe">POLL</a></button>
-			<button class="button"><a href="notes.html" target="askframe">NOTES</a></button>
-			<iframe src="ask.html" width="100%" height="400px" name="askframe">
+		<script>
+			function NavigationBar(type){
+				var x = document.getElementById("iframe");
+				if (x.src !== "ask.html" && type === "ask.html" ) {
+					x.src = "ask.html";
+				} else if (x.src !== "chat.html" && type === "chat.html") {
+					x.src = "chat.html";
+				} else if (x.src !== "quiz.html" && type === "quiz.html") {
+					x.src = "quiz.html";
+				} else if (x.src !== "poll.html" && type === "poll.html") {
+					x.src = "poll.html";
+				} else if (x !== "note.html" && type === "note.html") {
+					x.src = "note.html";
+				}
+			}
+		</script>
+		<div class="innertube">
+			<button class="button" onclick="NavigationBar('ask.html')">ASK</button>
+			<button class="button" onclick="NavigationBar('chat.html')">CHAT</button>
+			<button class="button" onclick="NavigationBar('quiz.html')">QUIZ</button>
+			<button class="button" onclick="NavigationBar('poll.html')">POLL</button>
+			<button class="button" onclick="NavigationBar('notes.html')">NOTES</button>
+		<div>
+			<iframe id="iframe" src ="ask.html" width="100%" height="400px" name="frame">
 				<p>your browser does not support iframes</p>
-		</iframe>
+			</iframe>
 		</div>
 	</div>
 </body>
