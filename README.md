@@ -3,7 +3,7 @@
 
 The website: https://michaeldao.github.io/Live-Lecture/
 
-To enable websockets for the live chat, run:
+To enable websockets for the live chat feature, type in the terminal:
 - npm install
 
 then go to the directory (src/ws-chat-server)
