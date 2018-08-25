@@ -2,6 +2,7 @@
 Finished 2nd place out of 13 teams in the 24 hour RMIT ITS hackathon: https://sites.rmit.edu.au/itshackathon/ 
 
 Link to our minimum viable product (MVP), which tackles the theme "flipped perspectives":  
+- https://www.youtube.com/watch?v=T2gvt8Gsoks
 - https://michaeldao.github.io/ITS-Hackathon-Live-Lecture/src/home.html
 
 To enable websockets for the live chat feature, go into the directory and type:
