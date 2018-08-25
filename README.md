@@ -1,5 +1,5 @@
 # ITS Hackathon - Ctrl Alt Elite
-Finished 2nd place out of 13 teams in the 24 hour [RMIT ITS hackathon](https://sites.rmit.edu.au/itshackathon/) where developed and pitched an idea that tackles the theme of the event "flipped perspectives" (students teaching students)
+Finished 2nd place out of 13 teams in the 24 hour [RMIT ITS hackathon](https://sites.rmit.edu.au/itshackathon/) where our team developed and pitched an idea that tackled the theme of the event "flipped perspectives" (students teaching students)
 
 Link to our [minimum viable product (MVP)](https://michaeldao.github.io/ITS-Hackathon-Live-Lecture/src/home.html
 ) and [video](https://www.youtube.com/watch?v=T2gvt8Gsoks) 
