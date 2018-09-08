@@ -6,7 +6,7 @@ Link to our [minimum viable product (MVP)](https://michaeldao.github.io/ITS-Hack
 
 ![Image of us](https://github.com/MichaelDao/Live-Lecture/blob/master/weWon.jpg)
 
-# Live chat 
+### enable chat 
 To enable websockets for the live chat feature, go to the directory (src/ws-chat-server) and type:
 - npm install
 - node index.js
