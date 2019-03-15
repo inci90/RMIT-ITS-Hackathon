@@ -7,9 +7,9 @@ Link to our [minimum viable product (MVP)](https://michaeldao.github.io/ITS-Hack
 ## Our Team
 - Simon Lay
 - Kanika Mehra 
-- Inci Keleher
+- Isaac Keleher
 - Daniel Dao
-- Me
+- Michael Dao
 
 ![Image of us](https://github.com/MichaelDao/Live-Lecture/blob/master/weWon.jpg)
 
